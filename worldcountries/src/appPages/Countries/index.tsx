@@ -1,10 +1,11 @@
 import "./styles.css"
+import { SearchInput } from "../../components/searchInput";
 
 
 export const Countries = () => {
     return (
-        <div>
-            
-        </div>
+        <section className="countriesArea">
+          <SearchInput/>  
+        </section>
     )
 }
