@@ -1,8 +1,7 @@
 import * as C from "./styles";
 
-
-export const Countries = () => {
-    return (
+export const CountryPage = () => {
+    return(
         <div>
             
         </div>
