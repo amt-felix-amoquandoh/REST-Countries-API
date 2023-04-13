@@ -1,10 +1,12 @@
-import * as C from "./styles"
+import "./styles.css"
 
 export const Header = () => {
     return (
-        <C.Header>
+        <header className="header">
+           <div className="container">
            <h1>Where in the World</h1>
            <p>Dark Mode</p>
-        </C.Header>
+           </div>
+        </header>    
     )
 }

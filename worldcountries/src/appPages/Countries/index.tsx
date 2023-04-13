@@ -1,4 +1,4 @@
-import * as C from "./styles";
+import "./styles.css"
 
 
 export const Countries = () => {
