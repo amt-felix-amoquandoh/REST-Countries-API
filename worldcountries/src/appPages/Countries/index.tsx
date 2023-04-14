@@ -1,24 +1,28 @@
 import "./styles.css"
+import { useState, useEffect } from "react";
 import { SearchInput } from "../../components/searchInput";
+import { CountriesTS } from "../../types/Countries";
+import { CountryItem } from "../../components/CountryItems";
 import { api } from "../../api";
-import { useState } from "react";
-import { useEffect } from 'react'
+
+
 
 
 
 export const Countries = () => {
-  const [countries, setCountries] = useState([])
+  const [countries, setCountries] = useState<CountriesTS[]>([])
   const [loading, setLoading] = useState(false)
+
 
   useEffect(()=>{
     getAllCountries()
   },[])
 
   const getAllCountries = async ()=> {
-     setLoading(false)
+     setLoading(true)
      let countries = await api.getCountries()
      setCountries(countries)
-     setLoading(true)
+     setLoading(false)
   }
 
     return (
@@ -26,9 +30,17 @@ export const Countries = () => {
           <SearchInput/>  
           <div className="countries">
             {loading && <div className="">Loading...</div>}
-            {/* {!loading && countries.map((item, index) =>{
-
-            })} */}
+            {!loading &&
+                countries.map((item) => (
+                  <CountryItem
+                    name={item.name}
+                    population={item.population}
+                    region={item.region}
+                    capital={item.capital}
+                    flag={item.flags.png}
+                  />
+                ))
+            }
           </div>
         </section>
     )
