@@ -1,4 +1,5 @@
 import "./styles.css"
+// import { Search } from 'react-feather';
 
 export const SearchInput = () => {
     return (

@@ -4,8 +4,8 @@
 
 .countries{
     display: grid;
-    width: 1024px;
+    width: 1440px;
     margin: auto;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px
+    grid-gap: 50px
 }
