@@ -1,9 +1,13 @@
 import "./styles.css"
+import { useParams } from "react-router-dom";
 
 export const CountryPage = () => {
+    const {name} = useParams()
     return(
-        <div>
+       <section className="mainCountry">
+         <div className="container">
             
-        </div>
+            </div>
+       </section>
     )
 }

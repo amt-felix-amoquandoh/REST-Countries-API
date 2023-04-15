@@ -6,7 +6,7 @@ export const CountryItem = ({name, population, region, capital, flag}: CountryIt
     return(
         <div className="countryBox">
            
-            <Link  to={`country/${name}`}>
+            <Link  to={`/country/${name}`}>
                 <div className="imageBox">
                     <img src={flag} alt={`Flag name:${name}`} />
                 </div>
@@ -20,4 +20,4 @@ export const CountryItem = ({name, population, region, capital, flag}: CountryIt
        
         </div>
     )
-}
+} 
