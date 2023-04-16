@@ -2,10 +2,10 @@
     height: calc(100vh-90px);
 }
 
-.container{
+.countryContainer{
     width: 1440px;
     margin: auto;
-    padding: 40px 0px;
+    padding: 40px 0px;    
 }
 
 .loading{
