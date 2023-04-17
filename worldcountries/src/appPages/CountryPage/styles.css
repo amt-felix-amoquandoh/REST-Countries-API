@@ -1,13 +1,20 @@
-.mainCountry{
-    height: calc(100vh-90px);
+.mainCountry {
+  height: calc(100vh-90px);
 }
 
+<<<<<<< Updated upstream
 .countryContainer{
     width: 1440px;
     margin: auto;
     padding: 40px 0px;    
+=======
+.mainCountryContainer {
+  width: 1440px;
+  margin: auto;
+  padding: 40px 0px;
+>>>>>>> Stashed changes
 }
 
-.loading{
-    min-height: 100vh;
+.loading {
+  min-height: 100vh;
 }
