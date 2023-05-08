@@ -39,10 +39,10 @@ export const CountryPage = () => {
               nativeName={item.nativeName}
               population={item.population}
               region={item.region}
-              subregion={item.subRegion}
+              subregion={item.subregion}
               capital={item.capital}
               topLevelDomain={item.topLevelDomain[0]}
-              currencie={item.currencie && item.currencie}
+              currencies={item.currencies && item.currencies}
               languages={item.languages}
               borders={item.borders}
             />

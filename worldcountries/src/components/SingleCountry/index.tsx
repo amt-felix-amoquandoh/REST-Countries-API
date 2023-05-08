@@ -9,7 +9,7 @@ export const SingleCountry = ({
   subregion,
   capital,
   topLevelDomain,
-  currencie,
+  currencies,
   languages,
   borders,
   flag,
@@ -46,20 +46,27 @@ export const SingleCountry = ({
             <span>Top Level Domain</span>
             {topLevelDomain}
           </p>
-          {/* {currencie && (
+          {currencies && (
             <p>
               <span>Currencies: </span>
-              {currencie}
+              {currencies.map((currency, index) => (
+                <span key={index}>{currency.name}</span>
+              ))}
             </p>
-          )} */}
-          {/* <p><span>Languages: </span>{languages}</p> */}
+          )}
+          <p>
+            <span>Languages: </span>
+            {languages.map((language, index) => (
+              <span key={index}>{language.name}</span>
+            ))}
+          </p>
         </div>
       </div>
       {borders && (
         <div className="borderArea">
           <p>Border Countries: </p>
           <div className="borders">
-            {/* {borders.map((item, index) => <Link to={`/code/${item}` key{index}}></Link>)} */}
+            {/* {borders.map((item, index) => <Link to={`/code/${item}` key={index}></Link>)} */}
           </div>
         </div>
       )}
