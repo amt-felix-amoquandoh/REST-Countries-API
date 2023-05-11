@@ -1,17 +1,28 @@
 import "./styles.css";
 import { InputTS } from "../../types/Input";
+import { useState } from "react";
+import { useDebounce } from "./Debounce";
 // import { Search } from 'react-feather';
 
+const delay = 500;
+
 export const SearchInput = ({ value, setSearch }: InputTS) => {
+  const [input, setInput] = useState("");
+  const debouncedChange = useDebounce(setSearch, delay);
+  const handleChange = (e: string) => {
+    setInput(e);
+    debouncedChange(e);
+  };
+
   return (
     <section className="inputArea">
       <input
         type="text"
         placeholder="Search by Country"
-        value={value}
-        onChange={(e) => setSearch(e.target.value)}
+        value={input}
+        onChange={(e) => handleChange(e.target.value)}
       />
-      <select onChange={(e) => setSearch(e.target.value)}>
+      <select onChange={(e) => handleChange(e.target.value)}>
         <option value="Filter by Region" disabled selected>
           Filter by Region
         </option>
