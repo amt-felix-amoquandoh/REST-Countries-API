@@ -6,7 +6,7 @@ import { SingleCountry } from "../../components/SingleCountry";
 import { api } from "../../api";
 
 export const CountryPage = () => {
-  const { name } = useParams();
+  const { name, code } = useParams();
 
   const [loading, setLoading] = useState(false);
   const [country, setCountry] = useState<CountryTS[]>([]);
@@ -14,12 +14,17 @@ export const CountryPage = () => {
   useEffect(() => {
     if (name) {
       getCountry(name);
+    } else if (code) {
+      getCountry(code);
     }
-  }, [name]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [name, code]);
 
   const getCountry = async (params: string) => {
     setLoading(true);
-    let country = await api.getCountry(params);
+    let country = name
+      ? await api.getCountry(params)
+      : await api.getCountryByCode(params);
     setCountry(country);
     setLoading(false);
   };

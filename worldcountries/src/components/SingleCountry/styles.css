@@ -31,3 +31,36 @@
 .dataBox1 span {
   font-weight: bold;
 }
+
+.dataBox1 {
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+.countryData .borderBox {
+  margin-top: 20px;
+}
+
+.borderBox p {
+  font-weight: bold;
+}
+
+.borderBox .borders {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  width: 100%;
+}
+
+.borderBox .borders a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  min-height: 25px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 300;
+  box-shadow: 1px 1px 1em rgba(0, 0, 0, 0.2);
+}

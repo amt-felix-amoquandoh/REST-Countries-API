@@ -58,23 +58,25 @@ export const SingleCountry = ({
           <p>
             <span>Languages: </span>
             {languages.map((language, index) => (
-              <span key={index}>{language.name}</span>
+              <span key={index} className="language">
+                {language.name}
+              </span>
             ))}
           </p>
         </div>
-      </div>
-      {borders && (
-        <div className="borderBox">
-          <p>Border Countries: </p>
-          <div className="borders">
-            {borders.map((item, index) => (
-              <Link to={`/code/${item}`} key={index}>
-                {item}
-              </Link>
-            ))}
+        {borders && (
+          <div className="borderBox">
+            <p>Border Countries: </p>
+            <div className="borders">
+              {borders.map((item, index) => (
+                <Link to={`/code/${item}`} key={index}>
+                  {item}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
