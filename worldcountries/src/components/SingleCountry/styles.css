@@ -1,0 +1,33 @@
+.mainData {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mainData img {
+  width: 440px;
+  height: 300px;
+}
+
+.countryData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countryData h1 {
+  margin: 0px;
+}
+
+.countryData .dataBox1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+
+.dataBox1 p {
+  margin: 5px 0px;
+}
+
+.dataBox1 span {
+  font-weight: bold;
+}

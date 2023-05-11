@@ -1,5 +1,6 @@
 import "./styles.css";
 import { SingleCountryTS } from "../../types/SingleCountry";
+import { Link } from "react-router-dom";
 
 export const SingleCountry = ({
   name,
@@ -15,7 +16,7 @@ export const SingleCountry = ({
   flag,
 }: SingleCountryTS) => {
   return (
-    <div>
+    <div className="mainData">
       <img src={flag} alt={`Flag Name: ${name}`} />
       <div className="countryData">
         <h1>{name}</h1>
@@ -63,10 +64,14 @@ export const SingleCountry = ({
         </div>
       </div>
       {borders && (
-        <div className="borderArea">
+        <div className="borderBox">
           <p>Border Countries: </p>
           <div className="borders">
-            {/* {borders.map((item, index) => <Link to={`/code/${item}` key={index}></Link>)} */}
+            {borders.map((item, index) => (
+              <Link to={`/code/${item}`} key={index}>
+                {item}
+              </Link>
+            ))}
           </div>
         </div>
       )}
