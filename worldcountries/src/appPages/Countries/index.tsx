@@ -21,13 +21,19 @@ export const Countries = () => {
     setLoading(false);
   };
 
+  const lowerSearch = search.toLocaleLowerCase();
+
+  const filteredCountries = countries.filter((country) =>
+    country.name.toLocaleLowerCase().includes(lowerSearch)
+  );
+
   return (
     <section className="countriesArea">
       <SearchInput value={search} setSearch={setSearch} />
       <div className="countries">
         {loading && <div className="">Loading...</div>}
         {!loading &&
-          countries.map((item) => (
+          filteredCountries.map((item) => (
             <CountryItem
               name={item.name}
               population={item.population}
