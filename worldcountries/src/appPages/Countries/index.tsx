@@ -23,8 +23,10 @@ export const Countries = () => {
 
   const lowerSearch = search.toLocaleLowerCase();
 
-  const filteredCountries = countries.filter((country) =>
-    country.name.toLocaleLowerCase().includes(lowerSearch)
+  const filteredCountries = countries.filter(
+    (country) =>
+      country.name.toLocaleLowerCase().includes(lowerSearch) ||
+      country.region.toLocaleLowerCase().includes(lowerSearch)
   );
 
   return (

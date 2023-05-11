@@ -16,10 +16,10 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
           Filter by Region
         </option>
         <option value="Africa">Africa</option>
-        <option value="Africa">Americas</option>
-        <option value="Africa">Asia</option>
-        <option value="Africa">Europe</option>
-        <option value="Africa">Oceania</option>
+        <option value="America">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
       </select>
     </section>
   );
