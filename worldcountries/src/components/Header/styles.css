@@ -20,3 +20,31 @@
 .container p b {
   margin-left: 8px;
 }
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0px 20px;
+  }
+
+  .container {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 80px;
+  }
+  .container {
+    align-items: center;
+    padding: 14px 10px;
+    height: 100%;
+  }
+  .container p {
+    font-size: 14px;
+  }
+
+  .container h1 {
+    font-size: 17px;
+  }
+}
