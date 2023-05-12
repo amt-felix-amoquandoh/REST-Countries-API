@@ -22,3 +22,24 @@
   height: 40px;
   box-shadow: 1px 1px 1em rgba(0, 0, 0, 0.2);
 }
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainCountry {
+    padding: 20px;
+    height: auto;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+}

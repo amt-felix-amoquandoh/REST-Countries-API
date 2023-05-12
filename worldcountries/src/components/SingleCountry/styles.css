@@ -32,7 +32,7 @@
   font-weight: bold;
 }
 
-.dataBox1 {
+.countryData .dataBox1 {
   font-weight: normal;
   margin-right: 5px;
 }
@@ -63,4 +63,65 @@
   font-size: 13px;
   font-weight: 300;
   box-shadow: 1px 1px 1em rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .mainData img {
+    width: 340px;
+    height: 200px;
+  }
+
+  .countryData h1 {
+    font-size: 28px;
+  }
+
+  .countryData .dataBox1 p,
+  .countryData .dataBox1 span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainData {
+    grid-template-columns: 1fr;
+  }
+
+  .mainData img {
+    width: 280px;
+    height: 180px;
+    margin: auto;
+  }
+
+  .countryData {
+    width: 280px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .countryData h1 {
+    font-size: 17px;
+  }
+
+  .countryData .dataBox1 {
+    grid-template-columns: 1fr;
+  }
+
+  .countryData .dataBox1 p,
+  .countryData .dataBox1 span {
+    font-size: 12px;
+  }
+
+  .dataBox1 .topLevel {
+    margin-top: 40px;
+  }
+
+  .borderBox .borders {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .borderBox .borders a,
+  .borderBox .borders p,
+  .borderBox .borders span {
+    font-size: 14px;
+  }
 }
