@@ -42,6 +42,6 @@ export const ThemeProvider: React.FC<Provider> = ({ children }) => {
   const value = { state, dispatch };
 
   return (
-    <ThemeContext.Provider {value={value}}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );
 };
