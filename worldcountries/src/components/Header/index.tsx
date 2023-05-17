@@ -1,6 +1,5 @@
 import "./styles.css";
-import { IonIcon } from "@ionic/react";
-import { moonOutline, heart } from "ionicons/icons";
+import { Moon } from "react-feather";
 
 export const Header = () => {
   return (
@@ -8,7 +7,7 @@ export const Header = () => {
       <div className="container">
         <h1>Where in the World</h1>
         <p>
-          <IonIcon icon={moonOutline} /> <b>Dark Mode</b>
+          <Moon /> <b>Dark Mode</b>
         </p>
       </div>
     </header>
