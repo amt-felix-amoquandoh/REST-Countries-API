@@ -45,3 +45,11 @@ export const ThemeProvider: React.FC<Provider> = ({ children }) => {
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );
 };
+
+export const useform = () => {
+  const context = useContext(ThemeContext);
+  if (context === undefined) {
+    throw new Error(`Use form should be used inside provider`);
+  }
+  return context;
+};
