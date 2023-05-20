@@ -23,4 +23,6 @@
 
 body {
   font-family: var(--rootFont);
+  background-color: var(--whiteBackground);
+  color: var(--fontColor);
 }

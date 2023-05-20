@@ -23,7 +23,7 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
         onChange={(e) => handleChange(e.target.value)}
       />
       <select onChange={(e) => handleChange(e.target.value)}>
-        <option value="Filter by Region" disabled selected>
+        <option value="" disabled selected>
           Filter by Region
         </option>
         <option value="Africa">Africa</option>

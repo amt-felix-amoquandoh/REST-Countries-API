@@ -24,6 +24,7 @@ select {
 }
 
 .inputArea input select {
+  color: var(--inputColor);
   border-radius: 2px;
   padding: 0px 20px;
   border: none;
