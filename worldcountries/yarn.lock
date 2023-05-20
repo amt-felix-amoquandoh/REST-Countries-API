@@ -2017,10 +2017,10 @@
   "resolved" "https://registry.npmjs.org/@types/mime/-/mime-3.0.1.tgz"
   "version" "3.0.1"
 
-"@types/node@*", "@types/node@^18.15.11":
-  "integrity" "sha512-E5Kwq2n4SbMzQOn6wnmBjuK9ouqlURrcZDVfbo9ftDDTFt3nk7ZKK4GMOzoYgnpQJKcxwQw+lGaBvvlMo0qN/Q=="
-  "resolved" "https://registry.npmjs.org/@types/node/-/node-18.15.11.tgz"
-  "version" "18.15.11"
+"@types/node@*", "@types/node@^20.2.1":
+  "integrity" "sha512-DqJociPbZP1lbZ5SQPk4oag6W7AyaGMO6gSfRwq3PWl4PXTwJpRQJhDq4W0kzrg3w6tJ1SwlvGZ5uKFHY13LIg=="
+  "resolved" "https://registry.npmjs.org/@types/node/-/node-20.2.1.tgz"
+  "version" "20.2.1"
 
 "@types/parse-json@^4.0.0":
   "integrity" "sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA=="
@@ -3174,6 +3174,11 @@
   "resolved" "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz"
   "version" "1.2.2"
 
+"classnames@^2.2.5":
+  "integrity" "sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw=="
+  "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
+  "version" "2.3.2"
+
 "clean-css@^5.2.2":
   "integrity" "sha512-JVJbM+f3d3Q704rF4bqQ5UUyTtuJ0JRKNbTKVEeujCCBoMdkEi+V+e8oktO9qGQNSvHrFTM6JZRXrUvGR1czww=="
   "resolved" "https://registry.npmjs.org/clean-css/-/clean-css-5.3.2.tgz"
@@ -3364,7 +3369,7 @@
   "resolved" "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.30.0.tgz"
   "version" "3.30.0"
 
-"core-js@^3.19.2":
+"core-js@^3.1.3", "core-js@^3.19.2":
   "integrity" "sha512-hQotSSARoNh1mYPi9O2YaWeiq/cEB95kOrFb4NCrO4RIFt1qqNpKsaE+vy/L3oiqvND5cThqXzUU3r9F7Efztg=="
   "resolved" "https://registry.npmjs.org/core-js/-/core-js-3.30.0.tgz"
   "version" "3.30.0"
@@ -4506,6 +4511,14 @@
   "version" "2.0.2"
   dependencies:
     "bser" "2.1.1"
+
+"feather-icons@^4.29.0":
+  "integrity" "sha512-Y7VqN9FYb8KdaSF0qD1081HCkm0v4Eq/fpfQYQnubpqi0hXx14k+gF9iqtRys1SIcTEi97xDi/fmsPFZ8xo0GQ=="
+  "resolved" "https://registry.npmjs.org/feather-icons/-/feather-icons-4.29.0.tgz"
+  "version" "4.29.0"
+  dependencies:
+    "classnames" "^2.2.5"
+    "core-js" "^3.1.3"
 
 "file-entry-cache@^6.0.1":
   "integrity" "sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg=="

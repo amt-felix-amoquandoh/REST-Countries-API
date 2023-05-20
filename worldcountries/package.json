@@ -7,10 +7,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^18.15.11",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "axios": "^1.3.5",
+    "feather-icons": "^4.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
@@ -48,6 +48,7 @@
   "author": "felix",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.2.1",
     "@types/styled-components": "^5.1.26"
   }
 }
