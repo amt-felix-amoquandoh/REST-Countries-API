@@ -42,14 +42,14 @@ export const ThemeProvider = ({ children }: ProviderProps) => {
   const value: ContextType = { state, dispatch };
 
   return (
-    <ThemeContext.Provider> value={value}>{children}</ThemeContext.Provider>
-  )
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
 };
 
 export const useForm = () => {
-  const context = useContext(ThemeContext)
-  if(context === undefined){
-    throw new Error("UserForm needs to be used inside Theme provider")
+  const context = useContext(ThemeContext);
+  if (context === undefined) {
+    throw new Error("UserForm needs to be used inside Theme provider");
   }
-  return context
-}
+  return context;
+};
