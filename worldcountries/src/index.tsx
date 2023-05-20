@@ -11,9 +11,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Routes>
-      <App />
-    </Routes>
+    <ThemeProvider>
+      <Routes>
+        <App />
+      </Routes>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
