@@ -1,6 +1,5 @@
 .mainCountry {
   height: calc(100vh-90px);
-  color: var(--elementsColor);
 }
 
 .countryContainer {
