@@ -1,9 +1,7 @@
 import "./styles.css";
 import { Moon } from "react-feather";
-import { useForm } from "../../contexts/ThemeContext";
 
 export const Header = () => {
-  const { state, dispatch } = useForm();
   return (
     <header className="header">
       <div className="container">
