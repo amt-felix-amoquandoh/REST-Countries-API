@@ -2,7 +2,7 @@ import "./styles.css";
 import { InputTS } from "../../types/Input";
 import { useState } from "react";
 import { useDebounce } from "./Debounce";
-// import { Search } from 'react-feather';
+import { Search } from "react-feather";
 
 const delay = 500;
 
@@ -16,14 +16,19 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
 
   return (
     <section className="inputArea">
-      <input
-        type="text"
-        placeholder="Search by Country"
-        value={input}
-        onChange={(e) => handleChange(e.target.value)}
-      />
+      <div className="input-wrapper">
+        <input
+          type="text"
+          placeholder="Search by Country"
+          value={input}
+          onChange={(e) => handleChange(e.target.value)}
+        />
+        <span className="input-icon">
+          <Search size={16} />
+        </span>
+      </div>
       <select onChange={(e) => handleChange(e.target.value)}>
-        <option value="Filter by Region" disabled selected>
+        <option value="" disabled selected>
           Filter by Region
         </option>
         <option value="Africa">Africa</option>

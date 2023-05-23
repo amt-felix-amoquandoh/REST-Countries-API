@@ -1,5 +1,5 @@
 .header {
-  height: 90px;
+  height: 80px;
   box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
 }
 .container {
@@ -8,6 +8,7 @@
   margin: auto;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 
 .container p {
