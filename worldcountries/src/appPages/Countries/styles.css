@@ -1,12 +1,8 @@
 .countriesArea {
   min-height: calc(100vh) - 90px;
-  color: var(--elementsColor);
-  font-family: var(--rootFont);
 }
 
 .countries {
-  font-size: var(--homepageFonts);
-  color: var(--fontColor);
   display: grid;
   width: 1440px;
   margin: auto;
