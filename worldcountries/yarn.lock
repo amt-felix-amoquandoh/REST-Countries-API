@@ -9866,6 +9866,11 @@
     "ajv-errors" "^1.0.0"
     "ajv-keywords" "^3.1.0"
 
+"scripts@^0.1.0":
+  "integrity" "sha512-URMy4uj80+USxik0E+P7OeagdYGRM6vJQ+8zADRRNjcoIVdouxB7B60P4G4y20TizSGXdE0nAW5sSM1IIXa3hw=="
+  "resolved" "https://registry.npmjs.org/scripts/-/scripts-0.1.0.tgz"
+  "version" "0.1.0"
+
 "select-hose@^2.0.0":
   "integrity" "sha512-mEugaLK+YfkijB4fx0e6kImuJdCIt2LxCRcbEYPqRGCs4F2ogyfZU5IAZRdjCP8JPq2AtdNoC/Dux63d9Kiryg=="
   "resolved" "https://registry.npmjs.org/select-hose/-/select-hose-2.0.0.tgz"
