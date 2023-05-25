@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles.css"
 import { CountryItemTS } from "../../types/CountryItem"
 import { Link } from "react-router-dom";
@@ -20,4 +21,4 @@ export const CountryItem = ({name, population, region, capital, flag}: CountryIt
        
         </div>
     )
-} 
+}
