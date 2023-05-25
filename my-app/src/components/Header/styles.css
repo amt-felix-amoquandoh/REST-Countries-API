@@ -8,7 +8,9 @@
   margin: auto;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
+
 
 .container p {
   cursor: pointer;

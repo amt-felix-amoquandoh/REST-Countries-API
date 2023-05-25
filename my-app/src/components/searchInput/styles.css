@@ -1,6 +1,6 @@
 .inputArea {
   display: flex;
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
   justify-content: space-between;
   padding: 40px 0px;
@@ -12,7 +12,16 @@ select {
   padding: 2px 8px;
 }
 
-.inputArea input {
+.inputArea input select {
+  border-radius: 2px;
+  padding: 0px 20px;
+  border: none;
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
+  outline: 0;
+  font-size: 14px;
+}
+
+.inputArea .searchInput input {
   height: 50px;
   width: 450px;
   border-radius: 2px;
@@ -23,14 +32,12 @@ select {
   font-size: 14px;
 }
 
-.inputArea input select {
-  border-radius: 2px;
-  padding: 0px 20px;
-  border: none;
-  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
-  outline: 0;
-  font-size: 14px;
+.inputArea .searchInput .searchIcon {
+  margin-left: -30px;
+  color: #ccc;
+  margin-bottom: -5px;
 }
+
 
 @media (max-width: 1024px) {
   .inputArea {
@@ -50,7 +57,7 @@ select {
     width: max-content;
   }
 
-  .inputArea input {
+  .inputArea .searchInput input {
     width: 97%;
   }
 }
