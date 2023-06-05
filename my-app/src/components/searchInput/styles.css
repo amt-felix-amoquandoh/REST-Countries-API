@@ -14,12 +14,12 @@ select {
   background: var(--light-background);
 }
 
-select:focus {
+.inputArea select :focus {
   outline: none;
   border: none;
 }
 
-.inputArea input select {
+.inputArea select {
   border-radius: 2px;
   padding: 0px 20px;
   border: none;
@@ -27,9 +27,10 @@ select:focus {
   outline: 0;
   font-size: 14px;
   background: var(--light-background);
+  border-radius: 6px;
 }
 
-.inputArea input select:focus {
+.inputArea select:focus {
   border: none;
   outline: none;
 }
