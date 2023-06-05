@@ -4,12 +4,19 @@
   margin: auto;
   justify-content: space-between;
   padding: 40px 0px;
+  color: var(--light-input-color);
 }
 
 select {
   border: none;
-  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.096);
   padding: 2px 8px;
+  background: var(--light-background);
+}
+
+select:focus {
+  outline: none;
+  border: none;
 }
 
 .inputArea input select {
@@ -19,6 +26,12 @@ select {
   box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
   outline: 0;
   font-size: 14px;
+  background: var(--light-background);
+}
+
+.inputArea input select:focus {
+  border: none;
+  outline: none;
 }
 
 .inputArea .searchInput input {
@@ -34,7 +47,7 @@ select {
 
 .inputArea .searchInput .searchIcon {
   margin-left: -30px;
-  color: #ccc;
+  color: var(--light-input-color);
   margin-bottom: -5px;
 }
 
