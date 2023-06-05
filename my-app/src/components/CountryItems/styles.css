@@ -1,11 +1,12 @@
 .countryBox {
-  background-color: #fff;
+  background-color: var(--light-background);
   box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--light-text);
 }
 
 .imageBox img {
