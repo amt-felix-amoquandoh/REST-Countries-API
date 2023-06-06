@@ -16,6 +16,7 @@ select {
 
 .inputArea select option {
   background-color: var(--light-background);
+  color: var(--text-color);
 }
 
 .inputArea select :focus {
