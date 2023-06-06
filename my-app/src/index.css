@@ -25,10 +25,10 @@ body {
 /* Common styles for both themes */
 .container {
   /* Add common styles */
-  padding: 0px 40px;
+  padding: 0px 240px;
   height: 90px;
   display: flex;
-  max-width: 1440px;
+  max-width: 1840px;
   margin: auto;
   justify-content: space-between;
   align-items: center;
@@ -77,6 +77,18 @@ body {
 
   .container {
     width: auto;
+    padding: 0px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 0px 2px;
+  }
+
+  .container {
+    width: auto;
+    padding: 0px 40px;
   }
 }
 
@@ -98,5 +110,19 @@ body {
   .container h1 {
     font-size: 17px;
   }
+}
+
+@media (min-width: 767px) {
+  .header {
+    height: 80px;
+    margin: 0;
+  }
+  .container {
+    align-items: center;
+    padding: 4px 10px;
+    height: 100%;
+    margin: 0;
+  }
+
 }
 
