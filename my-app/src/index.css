@@ -79,9 +79,26 @@ body {
     width: auto;
     padding: 0px 40px;
   }
+
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1124px) {
   .header {
     padding: 0px 2px;
   }
@@ -90,7 +107,134 @@ body {
     width: auto;
     padding: 0px 40px;
   }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
 }
+
+@media (max-width: 1224px) {
+  .header {
+    padding: 0px 2px;
+  }
+
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 1324px) {
+  .header {
+    padding: 0px 2px;
+  }
+
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 1424px) {
+  .header {
+    padding: 0px 2px;
+  }
+
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 1524px) {
+  .header {
+    padding: 0px 2px;
+  }
+
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
 
 @media (max-width: 767px) {
   .header {
@@ -112,17 +256,21 @@ body {
   }
 }
 
-@media (min-width: 767px) {
-  .header {
-    height: 80px;
-    margin: 0;
-  }
-  .container {
-    align-items: center;
-    padding: 4px 10px;
-    height: 100%;
-    margin: 0;
-  }
 
+@media (max-device-width: 480px) {
+  .countries {
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
 }
+
+@media (max-device-width: 840px) {
+  .countries {
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
 

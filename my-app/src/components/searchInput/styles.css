@@ -67,12 +67,6 @@ select {
   }
 }
 
-@media (min-width: 1024px) {
-  .inputArea {
-    width: auto;
-    padding: 20px;
-  }
-}
 
 @media (max-width: 768px) {
   .inputArea {
