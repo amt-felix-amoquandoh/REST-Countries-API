@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MainRoute } from "./AppRoutes/MainRoute";
 import { Header } from "./components/Header";
+import { Moon, Sun } from 'react-feather';
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -12,11 +13,10 @@ function App() {
 
   return (
     <div className={`app ${theme}`}>
-      <Header toggleTheme={toggleTheme} />
+      <Header toggleTheme={toggleTheme} theme={theme} />
       <MainRoute toggleTheme={toggleTheme} />
     </div>
   );
 }
-
 
 export default App;

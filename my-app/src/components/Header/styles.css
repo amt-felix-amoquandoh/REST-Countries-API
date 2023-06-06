@@ -1,11 +1,12 @@
-.header {
- 
+.header { 
   box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
+  
 }
 .container {
+  padding: 0px 40px;
   height: 90px;
   display: flex;
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
   justify-content: space-between;
   align-items: center;

@@ -1,23 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,600;1,800&display=swap');
 
 :root {
-  --light-text: hsl(200, 15%, 8%);
-  --light-input-color: hsl(0, 0%, 52%);
-  --light-background: hsl(0, 0%, 98%);
-  --light-elements: hsl(0, 0%, 100%);  
+  --text-color: var(--light-text);
+  --input-color: var(--light-input-color);
+  --background-color: var(--light-background);
+  --elements-color: var(--light-elements);
 }
 
-
 .app.dark {
-  --light-text: hsl(0, 0%, 100%);
-  --light-input-color: hsl(0, 0%, 52%);
-  --light-background: hsl(207, 26%, 17%);
-  --light-elements: hsl(209, 23%, 22%);
+  --text-color: hsl(0, 0%, 100%);
+  --input-color: hsl(0, 0%, 52%);
+  --background-color: hsl(207, 26%, 17%);
+  --elements-color: hsl(209, 23%, 22%);
 }
 
 body {
   font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Common styles for both themes */
+.container {
+  /* Add common styles */
+  padding: 0px 40px;
+  height: 90px;
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container p {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container p b {
+  margin-left: 8px;
+}
+
+
+
+/* Light theme */
+
+.app.light {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Dark theme */
+
+.app.dark {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 /* Rest of your CSS styles */
-
