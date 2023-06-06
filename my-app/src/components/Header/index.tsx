@@ -1,14 +1,19 @@
-import "./styles.css"
+import React from 'react';
 import { Moon } from 'react-feather';
 
-export const Header = () => {
-    return (
-        <header className="header">
-           <div className="container">
-           <h1>Where in the world</h1>
-           <p><Moon /> <b>Dark Mode</b></p>
-           </div>
-        </header>    
-    )
-}
+type HeaderProps = {
+  toggleTheme: () => void;
+};
 
+export const Header = ({ toggleTheme }: HeaderProps) => {
+  return (
+    <header className="header">
+      <div className="container">
+        <h1>Where in the world</h1>
+        <p onClick={toggleTheme}>
+          <Moon /> <b>Dark Mode</b>
+        </p>
+      </div>
+    </header>
+  );
+};
