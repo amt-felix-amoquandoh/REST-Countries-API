@@ -7,19 +7,32 @@
   color: var(--input-color);
 }
 
-/* select {
+.inputArea select {
   border: none;
-  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.096);
-  padding: 2px 8px;
-  background: var(--light-background);
-} */
+  padding: 20px;
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
+  outline: 0;
+  font-size: 14px;
+  background: var(--background-color);
+  border-radius: 6px;
+  color: var(--text-color);
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 3.2em;
+  padding: 0px 2px 1px;
+}
 
 .inputArea select option {
   background-color: var(---background-color);
   color: var(--text-color);
   border: 1px solid var(---background-color);
   border-radius: 4px;
-  margin-top: 3px;
+  padding: 10px;
+  height: 200px;
 }
 
 .inputArea select :focus {
@@ -29,19 +42,6 @@
 
 .optiontry{
   display: none;
-}
-
-.inputArea select {
-  border-radius: 2px;
-  padding-left: 20px;
-  padding-right: 30px;
-  border: none;
-  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
-  outline: 0;
-  font-size: 14px;
-  background: var(--background-color);
-  border-radius: 6px;
-  color: var(--text-color);
 }
 
 .inputArea select:focus {

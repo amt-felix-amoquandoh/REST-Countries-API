@@ -26,11 +26,11 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
         />
         <Search className="searchIcon" size={20} />
       </div>
-      <select value={input} onChange={handleChange}>
+      <select className="selectDropdown" value={input} onChange={handleChange}>
         <option className="optiontry" value="" disabled>
           Filter by Region
         </option>
-        <option value="Africa">Africa</option>
+        <option className="me" value="Africa">Africa</option>
         <option value="America">Americas</option>
         <option value="Asia">Asia</option>
         <option value="Europe">Europe</option>
