@@ -3,6 +3,10 @@
   min-height: 100vh;
 }
 
+.backIcon{
+  margin-right: 10px;
+}
+
 .countryContainer {
   width: 1440px;
   margin: auto;

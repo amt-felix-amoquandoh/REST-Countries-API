@@ -26,6 +26,10 @@
   border: none;
 }
 
+.optiontry{
+  display: none;
+}
+
 .inputArea select {
   border-radius: 2px;
   padding: 0px 20px;

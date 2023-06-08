@@ -9,9 +9,10 @@ const delay = 500;
 export const SearchInput = ({ value, setSearch }: InputTS) => {
   const [input, setInput] = useState("");
   const debouncedChange = useDebounce(setSearch, delay);
-  const handleChange = (e: string) => {
-    setInput(e);
-    debouncedChange(e);
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement> | string) => {
+    const selectedValue = typeof e === 'string' ? e : e.target.value;
+    setInput(selectedValue);
+    debouncedChange(selectedValue);
   };
 
   return (
@@ -25,8 +26,8 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
         />
         <Search className="searchIcon" size={20} />
       </div>
-      <select onChange={(e) => handleChange(e.target.value)}>
-        <option value="Filter by Region" disabled selected>
+      <select value={input} onChange={handleChange}>
+        <option className="optiontry" value="" disabled>
           Filter by Region
         </option>
         <option value="Africa">Africa</option>
