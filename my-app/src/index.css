@@ -20,11 +20,13 @@ body {
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Common styles for both themes */
 .container {
   /* Add common styles */
+  outline: none;
   padding: 0px 240px;
   height: 90px;
   display: flex;
@@ -71,9 +73,7 @@ body {
 
 /* Rest of your CSS styles */
 @media (max-width: 1024px) {
-  .header {
-    padding: 0px 2px;
-  }
+
 
   .container {
     width: auto;
@@ -99,9 +99,7 @@ body {
 }
 
 @media (max-width: 1124px) {
-  .header {
-    padding: 0px 2px;
-  }
+ 
 
   .container {
     width: auto;
@@ -126,9 +124,7 @@ body {
 }
 
 @media (max-width: 1224px) {
-  .header {
-    padding: 0px 2px;
-  }
+  
 
   .container {
     width: auto;
@@ -153,9 +149,7 @@ body {
 }
 
 @media (max-width: 1324px) {
-  .header {
-    padding: 0px 2px;
-  }
+
 
   .container {
     width: auto;
@@ -180,9 +174,7 @@ body {
 }
 
 @media (max-width: 1424px) {
-  .header {
-    padding: 0px 2px;
-  }
+ 
 
   .container {
     width: auto;
@@ -208,9 +200,6 @@ body {
 }
 
 @media (max-width: 1524px) {
-  .header {
-    padding: 0px 2px;
-  }
 
   .container {
     width: auto;
@@ -259,18 +248,14 @@ body {
 
 @media (max-device-width: 480px) {
   .countries {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     width: auto;
     padding: 0px 20px;
   }
 }
 
-@media (max-device-width: 840px) {
-  .countries {
-    grid-template-columns: repeat(2, 1fr);
-    width: auto;
-    padding: 0px 20px;
-  }
-}
+
+
+
 
 
