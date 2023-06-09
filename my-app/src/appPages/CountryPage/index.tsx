@@ -4,7 +4,6 @@ import { Link, useParams } from "react-router-dom";
 import { CountryTS } from "../../types/Country";
 import { SingleCountry } from "../../components/SingleCountry";
 import { api } from "../../api";
-import { ArrowLeft } from 'react-feather';
 
 export const CountryPage = () => {
   const { name, code } = useParams();
@@ -34,7 +33,7 @@ export const CountryPage = () => {
     <section className="mainCountry">
       <div className="countryContainer">
         <Link to="/" className="backButton">
-          <ArrowLeft className="backIcon" size={18} /> Back
+          Back
         </Link>
         {loading && <div className="loading">Loading</div>}
         {!loading &&
