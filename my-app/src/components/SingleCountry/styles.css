@@ -3,7 +3,6 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-
 .mainData img {
   width: 440px;
   height: 300px;
@@ -56,6 +55,7 @@
 }
 
 .borderBox .borders a {
+  text-transform: uppercase;
   text-decoration: none;
   color: var(--text-color);
   display: flex;
@@ -130,8 +130,8 @@
 }
 
 @media (max-device-width: 820px) {
-  .countryData{
-   margin-left: auto;
-   margin-right: auto;
+  .countryData {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

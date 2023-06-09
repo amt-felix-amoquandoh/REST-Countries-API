@@ -1,6 +1,8 @@
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { SingleCountryTS } from "../../types/SingleCountry";
 import { Link } from "react-router-dom";
+import { api } from "../../api";
 
 export const SingleCountry = ({
   name,
@@ -15,6 +17,22 @@ export const SingleCountry = ({
   borders,
   flag,
 }: SingleCountryTS) => {
+  const [borderCountries, setBorderCountries] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchBorderCountries = async () => {
+      const borderCountryNames = await Promise.all(
+        borders.map(async (borderCode) => {
+          const borderCountry = await api.getCountryByCode(borderCode);
+          return borderCountry[0].name;
+        })
+      );
+      setBorderCountries(borderCountryNames);
+    };
+
+    fetchBorderCountries();
+  }, [borders]);
+
   return (
     <div className="mainData">
       <img src={flag} alt={`Flag Name: ${name}`} />
@@ -64,12 +82,12 @@ export const SingleCountry = ({
             ))}
           </p>
         </div>
-        {borders && (
+        {borderCountries.length > 0 && (
           <div className="borderBox">
             <p>Border Countries: </p>
             <div className="borders">
-              {borders.map((item, index) => (
-                <Link to={`/code/${item}`} key={index}>
+              {borderCountries.map((item, index) => (
+                <Link to={`/country/${item}`} key={index}>
                   {item}
                 </Link>
               ))}
