@@ -13,7 +13,7 @@
   box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
   outline: 0;
   font-size: 14px;
-  background: var(--background-color);
+  background: var(--elements-color);
   border-radius: 6px;
   color: var(--text-color);
 }
@@ -27,9 +27,8 @@ option {
 }
 
 .inputArea select option {
-  background-color: var(---background-color);
+  background-color: var(---elements-color);
   color: var(--text-color);
-  border: 1px solid var(---background-color);
   border-radius: 4px;
   padding: 10px;
   height: 200px;
@@ -52,13 +51,13 @@ option {
 .inputArea .searchInput input {
   height: 50px;
   width: 450px;
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 0px 10px;
   border: none;
-  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.397);
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.171);
   outline: 0;
   font-size: 14px;
-  background-color: var(--background-color);
+  background-color: var(--elements-color);
   color: var(--text-color);
 }
 
@@ -87,6 +86,8 @@ option {
   }
 
   .inputArea .searchInput input {
-    width: 90%;
+    width: 94%;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }

@@ -63,7 +63,7 @@ body {
 
 .container {
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: var(--elements-color);
 }
 
 /* Rest of your CSS styles */

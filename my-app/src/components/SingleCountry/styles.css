@@ -59,6 +59,7 @@
   text-transform: capitalize;
   text-decoration: none;
   color: var(--text-color);
+  background-color: var(--elements-color);
   display: flex;
   min-height: 25px;
   justify-content: center;
