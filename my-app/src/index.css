@@ -113,8 +113,8 @@ body {
     padding: 0px 20px;
   }
   .countryData {
-    margin-right: 50px;
-    margin-left: -50px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -237,5 +237,12 @@ body {
     grid-template-columns: 1fr;
     width: auto;
     padding: 0px 20px;
+  }
+}
+
+@media (max-device-width: 370px) {
+  .container {
+    width: auto;
+    padding: 0px 40px;
   }
 }

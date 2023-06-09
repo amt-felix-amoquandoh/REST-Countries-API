@@ -92,7 +92,6 @@
   .mainData img {
     width: 280px;
     height: 180px;
-    margin: auto;
   }
 
   .countryData {
@@ -125,7 +124,7 @@
   .borderBox .borders a,
   .borderBox .borders p,
   .borderBox .borders span {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
