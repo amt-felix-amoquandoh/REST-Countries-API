@@ -55,7 +55,7 @@
 }
 
 .borderBox .borders a {
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
   color: var(--text-color);
   display: flex;
@@ -63,7 +63,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   box-shadow: 1px 1px 1em rgba(0, 0, 0, 0.2);
 }
@@ -125,7 +125,7 @@
   .borderBox .borders a,
   .borderBox .borders p,
   .borderBox .borders span {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 

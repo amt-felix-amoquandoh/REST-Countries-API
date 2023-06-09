@@ -40,19 +40,19 @@ export const SingleCountry = ({
         <h1>{name}</h1>
         <div className="dataBox1">
           <p>
-            <span>Native Name:</span>
+            <span>Native Name: </span>
             {nativeName}
           </p>
           <p>
-            <span>Population:</span>
+            <span>Population: </span>
             {population}
           </p>
           <p>
-            <span>Region:</span>
+            <span>Region: </span>
             {region}
           </p>
           <p>
-            <span>Subregion:</span>
+            <span>Subregion: </span>
             {subregion}
           </p>
           {capital && (
