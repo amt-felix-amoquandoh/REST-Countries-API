@@ -241,6 +241,9 @@ body {
 }
 
 @media (max-device-width: 370px) {
+  body {
+    background-color: var(--background-color);
+  }
   .container {
     width: auto;
     padding: 0px 40px;

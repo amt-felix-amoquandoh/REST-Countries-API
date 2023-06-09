@@ -1,5 +1,6 @@
 .countriesArea {
   min-height: calc(100vh) - 90px;
+  background-color: var(--background-color);
 }
 
 .countries {

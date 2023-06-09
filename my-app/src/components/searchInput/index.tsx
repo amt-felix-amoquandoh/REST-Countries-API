@@ -2,17 +2,25 @@ import "./styles.css";
 import { InputTS } from "../../types/Input";
 import { useState } from "react";
 import { useDebounce } from "./Debounce";
-import { Search } from 'react-feather';
+import { Search } from "react-feather";
 
 const delay = 500;
 
 export const SearchInput = ({ value, setSearch }: InputTS) => {
-  const [input, setInput] = useState("");
+  const [searchInput, setSearchInput] = useState("");
+  const [filterInput, setFilterInput] = useState("");
   const debouncedChange = useDebounce(setSearch, delay);
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement> | string) => {
-    const selectedValue = typeof e === 'string' ? e : e.target.value;
-    setInput(selectedValue);
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedValue = e.target.value;
+    setSearchInput(selectedValue);
     debouncedChange(selectedValue);
+  };
+
+  const handleFilterChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedValue = e.target.value;
+    setFilterInput(selectedValue);
+    setSearch(selectedValue);
   };
 
   return (
@@ -21,16 +29,22 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
         <input
           type="text"
           placeholder="Search by Country"
-          value={input}
-          onChange={(e) => handleChange(e.target.value)}
+          value={searchInput}
+          onChange={handleSearchChange}
         />
         <Search className="searchIcon" size={20} />
       </div>
-      <select className="selectDropdown" value={input} onChange={handleChange}>
+      <select
+        className="selectDropdown"
+        value={filterInput}
+        onChange={handleFilterChange}
+      >
         <option className="optiontry" value="" disabled>
           Filter by Region
         </option>
-        <option className="me" value="Africa">Africa</option>
+        <option className="me" value="Africa">
+          Africa
+        </option>
         <option value="America">Americas</option>
         <option value="Asia">Asia</option>
         <option value="Europe">Europe</option>

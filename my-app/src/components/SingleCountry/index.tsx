@@ -21,13 +21,17 @@ export const SingleCountry = ({
 
   useEffect(() => {
     const fetchBorderCountries = async () => {
-      const borderCountryNames = await Promise.all(
-        borders.map(async (borderCode) => {
-          const borderCountry = await api.getCountryByCode(borderCode);
-          return borderCountry[0].name;
-        })
-      );
-      setBorderCountries(borderCountryNames);
+      if (borders && borders.length > 0) {
+        const borderCountryNames = await Promise.all(
+          borders.map(async (borderCode) => {
+            const borderCountry = await api.getCountryByCode(borderCode);
+            return borderCountry[0].name;
+          })
+        );
+        setBorderCountries(borderCountryNames);
+      } else {
+        setBorderCountries([]);
+      }
     };
 
     fetchBorderCountries();
