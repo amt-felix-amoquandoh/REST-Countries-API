@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,600;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,600;1,800&display=swap");
 
 :root {
   --text-color: hsl(200, 15%, 8%);
@@ -14,9 +14,8 @@
   --elements-color: hsl(209, 23%, 22%);
 }
 
-
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
@@ -48,8 +47,6 @@ body {
   margin-left: 8px;
 }
 
-
-
 /* Light theme */
 
 .app.light {
@@ -69,12 +66,8 @@ body {
   background-color: var(--background-color);
 }
 
-
-
 /* Rest of your CSS styles */
 @media (max-width: 1024px) {
-
-
   .container {
     width: auto;
     padding: 0px 40px;
@@ -99,8 +92,6 @@ body {
 }
 
 @media (max-width: 1124px) {
- 
-
   .container {
     width: auto;
     padding: 0px 40px;
@@ -121,11 +112,13 @@ body {
     width: auto;
     padding: 0px 20px;
   }
+  .countryData {
+    margin-right: 50px;
+    margin-left: -50px;
+  }
 }
 
 @media (max-width: 1224px) {
-  
-
   .container {
     width: auto;
     padding: 0px 40px;
@@ -149,8 +142,6 @@ body {
 }
 
 @media (max-width: 1324px) {
-
-
   .container {
     width: auto;
     padding: 0px 40px;
@@ -174,8 +165,6 @@ body {
 }
 
 @media (max-width: 1424px) {
- 
-
   .container {
     width: auto;
     padding: 0px 40px;
@@ -200,7 +189,6 @@ body {
 }
 
 @media (max-width: 1524px) {
-
   .container {
     width: auto;
     padding: 0px 40px;
@@ -224,7 +212,6 @@ body {
   }
 }
 
-
 @media (max-width: 767px) {
   .header {
     height: 80px;
@@ -232,7 +219,7 @@ body {
   }
   .container {
     align-items: center;
-    padding: 4px 10px;
+    padding: 4px 20px;
     height: 100%;
     margin: 0;
   }
@@ -245,7 +232,6 @@ body {
   }
 }
 
-
 @media (max-device-width: 480px) {
   .countries {
     grid-template-columns: 1fr;
@@ -253,9 +239,3 @@ body {
     padding: 0px 20px;
   }
 }
-
-
-
-
-
-
