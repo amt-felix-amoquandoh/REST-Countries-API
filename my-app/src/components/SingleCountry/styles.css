@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 120px;
+  margin-left: -120px;
 }
 
 .countryData h1 {
@@ -124,5 +126,12 @@
   .borderBox .borders p,
   .borderBox .borders span {
     font-size: 14px;
+  }
+}
+
+@media (max-device-width: 820px) {
+  .countryData{
+   margin-left: auto;
+   margin-right: auto;
   }
 }
