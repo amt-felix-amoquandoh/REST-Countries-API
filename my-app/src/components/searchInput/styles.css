@@ -4,12 +4,12 @@
   margin: auto;
   justify-content: space-between;
   padding: 40px 0px;
-  color: var(--input-color);
+  color: var(--text-color);
 }
 
 .inputArea select {
   border: none;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
   outline: 0;
   font-size: 14px;
@@ -40,7 +40,7 @@ option {
   border: none;
 }
 
-.optiontry{
+.optiontry {
   display: none;
 }
 
@@ -64,10 +64,9 @@ option {
 
 .inputArea .searchInput .searchIcon {
   margin-left: -30px;
-  color: var(--input-color);
+  color: var(--text-color);
   margin-bottom: -5px;
 }
-
 
 @media (max-width: 1024px) {
   .inputArea {
@@ -75,7 +74,6 @@ option {
     padding: 20px;
   }
 }
-
 
 @media (max-width: 768px) {
   .inputArea {
@@ -92,5 +90,3 @@ option {
     width: 97%;
   }
 }
-
-
