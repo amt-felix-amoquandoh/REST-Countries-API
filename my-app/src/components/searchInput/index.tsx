@@ -24,7 +24,7 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
     setSearch(selectedValue || "");
     setDropdownOpen(false);
   };
-  
+
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
@@ -46,22 +46,42 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
           <ChevronDown className="dropdownIcon" size={20} />
         </button>
         <ul className="dropdownList">
-          <li className="dropdownOption" data-value="" onClick={handleFilterChange}>
+          {/* <li className="dropdownOption" data-value="" onClick={handleFilterChange}>
             Filter by Region
-          </li>
-          <li className="dropdownOption" data-value="Africa" onClick={handleFilterChange}>
+          </li> */}
+          <li
+            className="dropdownOption"
+            data-value="Africa"
+            onClick={handleFilterChange}
+          >
             Africa
           </li>
-          <li className="dropdownOption" data-value="America" onClick={handleFilterChange}>
+          <li
+            className="dropdownOption"
+            data-value="America"
+            onClick={handleFilterChange}
+          >
             Americas
           </li>
-          <li className="dropdownOption" data-value="Asia" onClick={handleFilterChange}>
+          <li
+            className="dropdownOption"
+            data-value="Asia"
+            onClick={handleFilterChange}
+          >
             Asia
           </li>
-          <li className="dropdownOption" data-value="Europe" onClick={handleFilterChange}>
+          <li
+            className="dropdownOption"
+            data-value="Europe"
+            onClick={handleFilterChange}
+          >
             Europe
           </li>
-          <li className="dropdownOption" data-value="Oceania" onClick={handleFilterChange}>
+          <li
+            className="dropdownOption"
+            data-value="Oceania"
+            onClick={handleFilterChange}
+          >
             Oceania
           </li>
         </ul>

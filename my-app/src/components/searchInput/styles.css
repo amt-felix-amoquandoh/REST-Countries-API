@@ -7,29 +7,6 @@
   color: var(--text-color);
 }
 
-
-.inputArea select option {
-  background-color: var(---elements-color);
-  color: var(--text-color);
-  border-radius: 4px;
-  padding: 10px;
-  height: 200px;
-}
-
-.inputArea select :focus {
-  outline: none;
-  border: none;
-}
-
-.optiontry {
-  display: none;
-}
-
-.inputArea select:focus {
-  border: none;
-  outline: none;
-}
-
 .inputArea .searchInput input {
   height: 50px;
   width: 450px;
@@ -49,6 +26,10 @@
   margin-bottom: -5px;
 }
 
+input::placeholder {
+  color: var(--text-color);
+}
+
 @media (max-width: 1024px) {
   .inputArea {
     width: auto;
@@ -61,12 +42,6 @@
     flex-direction: column;
   }
 
-  select {
-    margin-top: 10px;
-    height: 50px;
-    width: max-content;
-  }
-
   .inputArea .searchInput input {
     width: 94%;
     margin-top: 10px;
@@ -74,25 +49,25 @@
   }
 }
 
-
 /* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
-  
 }
 
 /* Dropdown button */
 .dropdownButton {
+  width: 200px;
   display: flex;
   align-items: center;
-  padding: 8px 16px;
+  justify-content: space-between;
+  padding: 10px;
   background: var(--elements-color);
   cursor: pointer;
   border: none;
   box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
   outline: 0;
-  font-size: 12px;  
+  font-size: 12px;
   border-radius: 6px;
   color: var(--text-color);
 }
@@ -112,11 +87,14 @@
   border-top: none;
   border-radius: 0 0 4px 4px;
   list-style: none;
+  width: 200px;
+  font-size: 12.8px;
 }
 
 /* Show the dropdown list when open */
 .dropdown.open .dropdownList {
   display: block;
+  color: var(--text-color);
 }
 
 /* Dropdown options */
