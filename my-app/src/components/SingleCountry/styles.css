@@ -35,6 +35,11 @@
   font-weight: bold;
 }
 
+.dataBox1 span.language,
+.dataBox1 span.currency {
+  font-weight: normal;
+}
+
 .countryData .dataBox1 {
   font-weight: normal;
   margin-right: 5px;
@@ -70,10 +75,14 @@
   box-shadow: 1px 1px 1em rgba(0, 0, 0, 0.2);
 }
 
+.language{
+  font-weight: 400;
+}
+
 @media (min-width: 767px) and (max-width: 1024px) {
   .mainData img {
     width: 340px;
-    height: 200px;
+    height: auto;
   }
 
   .countryData h1 {

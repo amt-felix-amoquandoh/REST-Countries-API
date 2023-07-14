@@ -49,7 +49,7 @@ export const SingleCountry = ({
           </p>
           <p>
             <span>Population: </span>
-            {population}
+            {population.toLocaleString()}
           </p>
           <p>
             <span>Region: </span>
@@ -73,18 +73,19 @@ export const SingleCountry = ({
             <p>
               <span>Currencies: </span>
               {currencies.map((currency, index) => (
-                <span key={index}>{currency.name}</span>
+                <span className="currency" key={index}>{currency.name}</span>
               ))}
             </p>
           )}
           <p>
-            <span>Languages: </span>
-            {languages.map((language, index) => (
-              <span key={index} className="language">
-                {language.name}
-              </span>
-            ))}
-          </p>
+              <span>Languages: </span>
+               {languages.map((language, index) => (
+                <React.Fragment key={index}>
+                    {index !== 0 && ', '}
+                 <span className="language">{language.name}</span>
+                 </React.Fragment>
+                  ))}
+         </p>
         </div>
         {borderCountries.length > 0 && (
           <div className="borderBox">
