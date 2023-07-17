@@ -1,27 +1,21 @@
 import "./styles.css";
 import { InputTS } from "../../types/Input";
 import { useState } from "react";
-import { useDebounce } from "./Debounce";
 import { ChevronDown, Search } from "react-feather";
 
-const delay = 500;
-
-export const SearchInput = ({ value, setSearch }: InputTS) => {
-  const [searchInput, setSearchInput] = useState("");
+export const SearchInput = ({ value, setSearch, handleFilter }: InputTS & { handleFilter: (value: string) => void }) => {
   const [filterInput, setFilterInput] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const debouncedChange = useDebounce(setSearch, delay);
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedValue = e.target.value;
-    setSearchInput(selectedValue);
-    debouncedChange(selectedValue);
+    setSearch(selectedValue);
   };
 
   const handleFilterChange: React.MouseEventHandler<HTMLLIElement> = (e) => {
     const selectedValue = e.currentTarget.dataset.value;
     setFilterInput(selectedValue || "");
-    setSearch(selectedValue || "");
+    handleFilter(selectedValue || "");
     setDropdownOpen(false);
   };
 
@@ -35,7 +29,7 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
         <input
           type="text"
           placeholder="Search by Country"
-          value={searchInput}
+          value={value}
           onChange={handleSearchChange}
         />
         <Search className="searchIcon" size={20} />
@@ -46,9 +40,6 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
           <ChevronDown className="dropdownIcon" size={20} />
         </button>
         <ul className="dropdownList">
-          {/* <li className="dropdownOption" data-value="" onClick={handleFilterChange}>
-            Filter by Region
-          </li> */}
           <li
             className="dropdownOption"
             data-value="Africa"
@@ -58,7 +49,7 @@ export const SearchInput = ({ value, setSearch }: InputTS) => {
           </li>
           <li
             className="dropdownOption"
-            data-value="America"
+            data-value="Americas"
             onClick={handleFilterChange}
           >
             Americas
